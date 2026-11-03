@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eric Anderson — Rive Animation & Design</title>
+  <meta name="description" content="Portfolio of Eric Anderson — interactive Rive animations, motion design, and product design work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero-wrap reveal">
+    <div class="hero card-dark">
+      <h1 class="hero-title">
+        <span class="outline">ERIC ANDERSON</span><br />
+        <span class="outline dim">RIVE&nbsp;ANIMATION</span>
+      </h1>
+      <p class="hero-sub">Interactive animation &amp; design — built with Rive.</p>
+
+      <!-- Live Rive animation, bottom-left like the reference mascot -->
+      <div class="hero-mascot">
+        <div class="rive-slot" data-rive-src="assets/rive/hero.riv" data-rive-fallback="demo" data-state-machine=""></div>
+        <svg class="scribble" viewBox="0 0 120 14" aria-hidden="true">
+          <path d="M2 8 Q 18 2, 34 8 T 66 8 T 98 8 T 118 6" fill="none" stroke="var(--coral)" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+        </svg>
+      </div>
+
+      <nav class="hero-nav">
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="mailto:contrite@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ MINI CARDS ============ -->
+  <section class="mini-row reveal" aria-label="Highlights">
+    <a class="mini-card" href="#work">
+      <div class="mini-art">
+        <div class="rive-slot rive-contain" data-rive-src="assets/rive/mini-1.riv" data-rive-fallback="placeholder"></div>
+      </div>
+      <span class="mini-caption">Try it: state machines you can poke</span>
+    </a>
+    <a class="mini-card" href="#work">
+      <div class="mini-art">
+        <div class="rive-slot rive-contain" data-rive-src="assets/rive/mini-2.riv" data-rive-fallback="placeholder"></div>
+      </div>
+      <span class="mini-caption">Splash screens &amp; loaders for iOS</span>
+    </a>
+    <a class="mini-card" href="#process">
+      <div class="mini-art">
+        <div class="rive-slot rive-contain" data-rive-src="assets/rive/mini-3.riv" data-rive-fallback="placeholder"></div>
+      </div>
+      <span class="mini-caption">Interactive brand mascots</span>
+    </a>
+  </section>
+
+  <!-- ============ FEATURED PROJECT 1 ============ -->
+  <section id="work" class="project reveal">
+    <figure class="frame card-dark">
+      <div class="frame-screen">
+        <div class="rive-slot" data-rive-src="assets/rive/project-hero.riv" data-rive-fallback="demo"></div>
+      </div>
+      <figcaption class="frame-caption">
+        Animated landing page hero &nbsp;·&nbsp; built in Rive
+        <a class="frame-link" href="#" >see it live <strong>HERE</strong></a>
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ BANNER ============ -->
+  <section class="banner card-dark reveal">
+    <h2>RIVE WORK&nbsp;+&nbsp;SPECIAL</h2>
+  </section>
+
+  <!-- ============ PROCESS CARD (tilted) ============ -->
+  <section id="process" class="tilt-wrap reveal">
+    <div class="tilt-card card-dark">
+      <span class="tilt-tab" aria-hidden="true"></span>
+      <h2>Process&nbsp;+&nbsp;2D&nbsp;Work</h2>
+      <p>From rough boards to rigged state machines — vectors, bones, listeners, and a lot of graph-editor time.</p>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="quotes" aria-label="Testimonials">
+    <blockquote class="quote card-dark quote-right reveal">
+      <div class="quote-art">
+        <div class="rive-slot rive-contain" data-rive-src="assets/rive/quote-1.riv" data-rive-fallback="placeholder"></div>
+      </div>
+      <div class="quote-body">
+        <p>“Working with Eric was like having a co-pilot who understood our vision. The animations elevated our
+        product in ways we didn’t know were possible — he propelled our project into the galaxy.” 🚀</p>
+        <cite>Prince Beverly · B &amp; C Camera</cite>
+      </div>
+    </blockquote>
+
+    <blockquote class="quote card-dark quote-left reveal">
+      <div class="quote-art">
+        <div class="rive-slot rive-contain" data-rive-src="assets/rive/quote-2.riv" data-rive-fallback="placeholder"></div>
+      </div>
+      <div class="quote-body">
+        <p>“He crafted something that wasn’t just visually stunning but emotionally resonant. There’s a sincerity
+        to the work — the warmth, the restraint, the sense of belonging.” ✨</p>
+        <cite>Justine Kahn · Botnia Skincare</cite>
+      </div>
+    </blockquote>
+  </section>
+
+  <!-- ============ FEATURED PROJECT 2 ============ -->
+  <section class="project reveal">
+    <figure class="frame card-dark">
+      <div class="frame-screen">
+        <div class="rive-slot" data-rive-src="assets/rive/project-2.riv" data-rive-fallback="placeholder"></div>
+      </div>
+      <figcaption class="frame-caption">
+        Product onboarding flow &nbsp;·&nbsp; Rive + SwiftUI
+        <a class="frame-link" href="#">case study <strong>HERE</strong></a>
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ TOOLS ============ -->
+  <section class="tools reveal" aria-label="Tools">
+    <span class="tool" title="Figma">
+      <svg viewBox="0 0 24 24"><path fill="#f24e1e" d="M8 2h4v6.7H8A3.35 3.35 0 0 1 8 2z"/><path fill="#ff7262" d="M12 2h4a3.35 3.35 0 0 1 0 6.7h-4z"/><path fill="#1abcfe" d="M12 12a3.35 3.35 0 1 1 3.35 3.35A3.35 3.35 0 0 1 12 12z"/><path fill="#0acf83" d="M8 15.3h4V18a3.35 3.35 0 1 1-4-2.7z"/><path fill="#a259ff" d="M8 8.7h4v6.6H8a3.3 3.3 0 0 1 0-6.6z"/></svg>
+    </span>
+    <span class="tool" title="Rive">
+      <svg viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#0b1120"/><path fill="#fff" d="M6 6h8.2a4 4 0 0 1 1.6 7.7L18.5 18h-3l-2.5-3.8H9V18H6zm3 2.6v3h5a1.5 1.5 0 0 0 0-3z"/></svg>
+    </span>
+    <span class="tool" title="Blender">
+      <svg viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#fff"/><circle cx="14" cy="13" r="6" fill="#ea7600"/><circle cx="14" cy="13" r="2.6" fill="#fff"/><path fill="#265787" d="M3 12.5 10 7l1.6 2.2-4.4 3.3z"/></svg>
+    </span>
+    <span class="tool" title="After Effects">
+      <svg viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#1f2a5e"/><text x="12" y="16.5" text-anchor="middle" font-family="Archivo, sans-serif" font-size="10" font-weight="800" fill="#9dabff">Ae</text></svg>
+    </span>
+    <span class="tool" title="Xcode">
+      <svg viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#0f172a"/><path fill="#3ba9ff" d="m9.5 7 1.7 1-3.4 6-1.7-1zm5 0 3.4 6-1.7 1-3.4-6zM7 16h10v1.8H7z"/></svg>
+    </span>
+    <span class="tool" title="VS Code">
+      <svg viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#fff"/><path fill="#2f80ed" d="M16.5 3 8 10.2 4.8 7.7 3 8.6v6.8l1.8.9L8 13.8 16.5 21l4.5-2V5zM16 15.5 11 12l5-3.5z"/></svg>
+    </span>
+  </section>
+
+  <!-- ============ OUTRO BANNER ============ -->
+  <section class="banner banner-light reveal">
+    <h2>LET’S MAKE SOMETHING MOVE</h2>
+  </section>
+
+  <footer class="footer reveal">
+    <a href="mailto:contrite@gmail.com">contrite@gmail.com</a>
+    <span>© 2026 Eric Anderson</span>
+  </footer>
+
+  <script src="https://unpkg.com/@rive-app/canvas@2.21.6"></script>
+  <script src="main.js"></script>
+</body>
+</html>
